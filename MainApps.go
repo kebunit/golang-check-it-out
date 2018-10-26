@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+	basic.MobilanYuk()
 	basic.Hello()
 	basic.Goserver()
 }
