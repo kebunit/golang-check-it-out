@@ -1,6 +1,8 @@
 package oop
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // global package variable
 const usixteenbitmax float64 = 66555
@@ -14,6 +16,7 @@ type car struct {
 	top_speed_kwh float64
 }
 
+// constructor
 // create a new car
 func NewCar(gp uint16, bp uint16, sw int16, tsk float64) car {
 	return car{gp, bp, sw, tsk}
