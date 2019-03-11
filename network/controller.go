@@ -9,6 +9,7 @@ import (
 
 func UserController(response http.ResponseWriter, request *http.Request) {
 	data := map[string]string{}
+
 	data["name"]="Sabituddin Bigbang"
 	data["noHP"]="0909090909090909"
 	data["city"]="Jakarta"
@@ -23,5 +24,6 @@ func UserController(response http.ResponseWriter, request *http.Request) {
 }
 
 func HomeController(response http.ResponseWriter, request *http.Request) {
-	fmt.Fprintf(response, "Welcome!!!")
+	// fmt.Fprintf(response, "Welcome!!!")
+	 http.Redirect(response, request, "http://localhost", 301)
 }

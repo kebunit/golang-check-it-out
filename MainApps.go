@@ -1,11 +1,12 @@
 package main
 
 import (
-	"fmt"
+	// "fmt"
 	// "github.com/kebunit/golang-check-it-out/basic"
 	// "github.com/kebunit/golang-check-it-out/oop"
-	// "github.com/kebunit/golang-check-it-out/network"
-	"github.com/kebunit/golang-check-it-out/file"
+	"github.com/kebunit/golang-check-it-out/network"
+	// "github.com/kebunit/golang-check-it-out/file"
+	// "github.com/kebunit/golang-check-it-out/mapexample"
 	// "github.com/kebunit/golang-check-it-out/db"
 )
 
@@ -20,14 +21,18 @@ func main() {
 	// mycar.SetGasPedal(50000)
 	// mycar.Print()
 	// oop.TestOOP()
+	// TestNested()
 
 	// DB PACKAGE TEST
 	// mydb.MyDBTest()
 
 	// FILE PACKAGE 
-	file.SaveToFile("filename.xbt", "Ternyata!!! as simple as that!")
-	fmt.Println(file.ReadFile("filename.xbt"))
+	// file.SaveToFile("filename.xbt", "Ternyata!!! as simple as that!")
+	// fmt.Println(file.ReadFile("filename.xbt"))
 	// NETWORK PACKAGER TEST
-	// network.ServerON()
+	network.ServerON()
+
+	// MAP
+	// mapexample.TestMap()
 	
 }
