@@ -1,14 +1,6 @@
 package main
 
-import (
-	// "fmt"
-	// "github.com/kebunit/golang-check-it-out/basic"
-	// "github.com/kebunit/golang-check-it-out/oop"
-	"github.com/kebunit/golang-check-it-out/network"
-	// "github.com/kebunit/golang-check-it-out/file"
-	// "github.com/kebunit/golang-check-it-out/mapexample"
-	// "github.com/kebunit/golang-check-it-out/db"
-)
+import "github.com/kebunit/golang-check-it-out/network"
 
 func main() {
 	// BASIC PACKAGE TEST
@@ -24,7 +16,7 @@ func main() {
 	// TestNested()
 
 	// DB PACKAGE TEST
-	// mydb.MyDBTest()
+	//mydb.InsertDB()
 
 	// FILE PACKAGE 
 	// file.SaveToFile("filename.xbt", "Ternyata!!! as simple as that!")

@@ -2,9 +2,18 @@ package network
 
 import (
 	"fmt"
+	"github.com/gin-gonic/gin"
 	"log"
 	"net/http"
 )
+
+var ginEngine *gin.Engine
+
+func init() {
+	e := GetEngine()
+	e.POST("/version/:version", InsertVersion)
+}
+
 
 func BasicAuth(handler http.HandlerFunc, username, password, realm string) http.HandlerFunc {
     return func(response http.ResponseWriter, request *http.Request) {
@@ -27,9 +36,9 @@ func Router(pattern string, handler http.HandlerFunc){
 }
 
 func ServerON() {
-	Router("/", BasicAuth(HomeController, "sabit", "4bit", "Please enter your username and password for this site"))
+	Router("/", BasicAuth(HomeController, "sabit", "54bit", "Please enter your username and password for this site"))
 	Router("/user", UserController)
-	fmt.Printf("Server running on http://localhost:8181\n")
-	log.Fatal(http.ListenAndServe(":8181", nil))
+	fmt.Printf("Server running on http://localhost:6969\n")
+	log.Fatal(http.ListenAndServe(":6969", nil))
 }
 
